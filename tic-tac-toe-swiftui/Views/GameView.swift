@@ -25,15 +25,8 @@ struct GameView: View {
                         
                         ZStack {
                             
-                            Circle()
-                                .foregroundColor(.red).opacity(0.8)
-                                .frame(width: geometery.size.width/3 - 15,
-                                       height: geometery.size.width/3 - 15)
-                            
-                            Image(systemName: viewModel.moves[index]?.indicator ?? "" )
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
+                            GameIndicators(proxy: geometery)
+                            GameCircles(systemImage: viewModel.moves[index]?.indicator ?? "" )
                             
                         } //ZStack
                         .onTapGesture {
@@ -44,24 +37,52 @@ struct GameView: View {
                 
                 Spacer()
                 
-            } //VStack
+            }
             .padding()
             .disabled(viewModel.isGameBoardDisabled)
             .alert(item: $viewModel.alertItem) { alertItem in
+                
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: .default(alertItem.buttonTitle, action: {
                         viewModel.resetGame()
                       }))
             }
-            
-        } //GeometryReader
-        
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         GameView()
+    }
+}
+
+//MARK:- GameIndicators
+struct GameIndicators: View {
+    
+    var proxy: GeometryProxy
+    
+    var body: some View {
+        
+        Circle()
+            .foregroundColor(.red).opacity(0.8)
+            .frame(width:  proxy.size.width/3 - 15,
+                   height: proxy.size.width/3 - 15)
+    }
+}
+
+//MARK:- GameCircles
+struct GameCircles: View {
+    
+    var systemImage: String
+    
+    var body: some View {
+        
+        Image(systemName: systemImage)
+            .resizable()
+            .frame(width: 40, height: 40)
+            .foregroundColor(.white)
+        
     }
 }
