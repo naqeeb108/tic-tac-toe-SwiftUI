@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045446DA267E324200947BBB /* MovesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045446D9267E324200947BBB /* MovesModel.swift */; };
+		045446DE267E327000947BBB /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045446DD267E327000947BBB /* Enums.swift */; };
 		04BCAC5F267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCAC5E267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift */; };
 		04BCAC61267DE9AA0037D96C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCAC60267DE9AA0037D96C /* GameView.swift */; };
 		04BCAC63267DE9AB0037D96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCAC62267DE9AB0037D96C /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045446D9267E324200947BBB /* MovesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesModel.swift; sourceTree = "<group>"; };
+		045446DD267E327000947BBB /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		04BCAC5B267DE9AA0037D96C /* tic-tac-toe-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BCAC5E267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_toe_swiftuiApp.swift; sourceTree = "<group>"; };
 		04BCAC60267DE9AA0037D96C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045446DC267E325F00947BBB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				045446DD267E327000947BBB /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		04BCAC52267DE9AA0037D96C = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 				04BCAC75267E29140037D96C /* Views */,
 				04BCAC76267E292B0037D96C /* Supporting Files */,
 				04BCAC77267E29360037D96C /* Data Manager */,
+				045446DC267E325F00947BBB /* Enums */,
 				04BCAC64267DE9AB0037D96C /* Preview Content */,
 			);
 			path = "tic-tac-toe-swiftui";
@@ -78,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				04BCAC6F267E08CA0037D96C /* Alerts.swift */,
+				045446D9267E324200947BBB /* MovesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BCAC7B267E2A210037D96C /* GameViewModel.swift in Sources */,
+				045446DA267E324200947BBB /* MovesModel.swift in Sources */,
 				04BCAC61267DE9AA0037D96C /* GameView.swift in Sources */,
 				04BCAC70267E08CA0037D96C /* Alerts.swift in Sources */,
+				045446DE267E327000947BBB /* Enums.swift in Sources */,
 				04BCAC5F267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

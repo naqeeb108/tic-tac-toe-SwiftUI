@@ -10,6 +10,7 @@ import SwiftUI
 
 final class GameViewModel: ObservableObject {
     
+    //MARK:- variables
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())]
@@ -20,6 +21,7 @@ final class GameViewModel: ObservableObject {
     @Published var alertItem: alertItem?
     
     
+    //MARK:- processPlayerMove
     func processPlayerMove(for Position: Int) {
         
         if isCircleOccupied(in: moves, forIndex: Position) { return }
@@ -45,22 +47,23 @@ final class GameViewModel: ObservableObject {
             isGameBoardDisabled = false
             
             if checkWinCondition(for: .computer, in: moves) {
+                
                 alertItem = AlertContext.computerWin
                 return
+                
             }
             
             if checkForDraw(in: moves) {
+                
                 alertItem = AlertContext.matchDraw
                 return
+                
             }
-            
         }
     }
     
-    func isCircleOccupied(in moves: [Move?], forIndex index: Int) -> Bool {
-        return moves.contains(where: { $0?.boradIndex == index } )
-    }
     
+    //MARK:- determineComputerMovePosition
     func determineComputerMovePosition(in move: [Move?]) -> Int {
         
         let winPatterns: Set<Set<Int>> = [ [0,1,2],
@@ -109,7 +112,6 @@ final class GameViewModel: ObservableObject {
         let centerCircle = 4
         if !isCircleOccupied(in: move, forIndex: centerCircle) { return centerCircle }
         
-        
         var movePosintion = Int.random(in: 0..<9)
         
         while isCircleOccupied(in: moves, forIndex: movePosintion) {
@@ -120,7 +122,7 @@ final class GameViewModel: ObservableObject {
         return movePosintion
     }
     
-    
+    //MARK:- checkWinCondition
     func checkWinCondition(for player: Player, in moves: [Move?]) -> Bool {
         
         let winPatterns: Set<Set<Int>> = [ [0,1,2],
@@ -133,21 +135,29 @@ final class GameViewModel: ObservableObject {
                                            [2,4,6]
         ]
         
-        
         let playerMoves = moves.compactMap { $0 }.filter { $0.player == player }
         let playerPositions = Set(playerMoves.map { $0.boradIndex })
-        
         for pattern in winPatterns where pattern.isSubset(of: playerPositions) { return true }
         
         return false
     }
     
+    //MARK:- checkForDraw
     func checkForDraw(in moves: [Move?]) -> Bool {
         return moves.compactMap { $0 }.count == 9
+        
     }
     
+    //MARK:- resetGame
     func resetGame() {
         moves =  Array(repeating: nil, count: 9)
+        
+    }
+    
+    //MARK:- isCircleOccupied
+    func isCircleOccupied(in moves: [Move?], forIndex index: Int) -> Bool {
+        return moves.contains(where: { $0?.boradIndex == index } )
+        
     }
     
 }
