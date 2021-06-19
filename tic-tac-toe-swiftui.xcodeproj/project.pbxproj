@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BCAC5F267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCAC5E267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift */; };
+		04BCAC61267DE9AA0037D96C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCAC60267DE9AA0037D96C /* GameView.swift */; };
+		04BCAC63267DE9AB0037D96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCAC62267DE9AB0037D96C /* Assets.xcassets */; };
+		04BCAC66267DE9AB0037D96C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCAC65267DE9AB0037D96C /* Preview Assets.xcassets */; };
+		04BCAC70267E08CA0037D96C /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCAC6F267E08CA0037D96C /* Alerts.swift */; };
+		04BCAC7B267E2A210037D96C /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCAC7A267E2A210037D96C /* GameViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BCAC5B267DE9AA0037D96C /* tic-tac-toe-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BCAC5E267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_toe_swiftuiApp.swift; sourceTree = "<group>"; };
+		04BCAC60267DE9AA0037D96C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		04BCAC62267DE9AB0037D96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BCAC65267DE9AB0037D96C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04BCAC67267DE9AB0037D96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BCAC6F267E08CA0037D96C /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		04BCAC7A267E2A210037D96C /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BCAC58267DE9AA0037D96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BCAC52267DE9AA0037D96C = {
+			isa = PBXGroup;
+			children = (
+				04BCAC5D267DE9AA0037D96C /* tic-tac-toe-swiftui */,
+				04BCAC5C267DE9AA0037D96C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04BCAC5C267DE9AA0037D96C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BCAC5B267DE9AA0037D96C /* tic-tac-toe-swiftui.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BCAC5D267DE9AA0037D96C /* tic-tac-toe-swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				04BCAC73267E28F50037D96C /* Models */,
+				04BCAC74267E28FD0037D96C /* View Models */,
+				04BCAC75267E29140037D96C /* Views */,
+				04BCAC76267E292B0037D96C /* Supporting Files */,
+				04BCAC77267E29360037D96C /* Data Manager */,
+				04BCAC64267DE9AB0037D96C /* Preview Content */,
+			);
+			path = "tic-tac-toe-swiftui";
+			sourceTree = "<group>";
+		};
+		04BCAC64267DE9AB0037D96C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04BCAC65267DE9AB0037D96C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04BCAC73267E28F50037D96C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04BCAC6F267E08CA0037D96C /* Alerts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04BCAC74267E28FD0037D96C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				04BCAC7A267E2A210037D96C /* GameViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		04BCAC75267E29140037D96C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04BCAC60267DE9AA0037D96C /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04BCAC76267E292B0037D96C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04BCAC5E267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift */,
+				04BCAC62267DE9AB0037D96C /* Assets.xcassets */,
+				04BCAC67267DE9AB0037D96C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04BCAC77267E29360037D96C /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BCAC5A267DE9AA0037D96C /* tic-tac-toe-swiftui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BCAC6A267DE9AB0037D96C /* Build configuration list for PBXNativeTarget "tic-tac-toe-swiftui" */;
+			buildPhases = (
+				04BCAC57267DE9AA0037D96C /* Sources */,
+				04BCAC58267DE9AA0037D96C /* Frameworks */,
+				04BCAC59267DE9AA0037D96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tic-tac-toe-swiftui";
+			productName = "tic-tac-toe-swiftui";
+			productReference = 04BCAC5B267DE9AA0037D96C /* tic-tac-toe-swiftui.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BCAC53267DE9AA0037D96C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					04BCAC5A267DE9AA0037D96C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 04BCAC56267DE9AA0037D96C /* Build configuration list for PBXProject "tic-tac-toe-swiftui" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04BCAC52267DE9AA0037D96C;
+			productRefGroup = 04BCAC5C267DE9AA0037D96C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BCAC5A267DE9AA0037D96C /* tic-tac-toe-swiftui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BCAC59267DE9AA0037D96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BCAC66267DE9AB0037D96C /* Preview Assets.xcassets in Resources */,
+				04BCAC63267DE9AB0037D96C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BCAC57267DE9AA0037D96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BCAC7B267E2A210037D96C /* GameViewModel.swift in Sources */,
+				04BCAC61267DE9AA0037D96C /* GameView.swift in Sources */,
+				04BCAC70267E08CA0037D96C /* Alerts.swift in Sources */,
+				04BCAC5F267DE9AA0037D96C /* tic_tac_toe_swiftuiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04BCAC68267DE9AB0037D96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04BCAC69267DE9AB0037D96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BCAC6B267DE9AB0037D96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tic-tac-toe-swiftui/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tic-tac-toe-swiftui/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.tic-tac-toe-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04BCAC6C267DE9AB0037D96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tic-tac-toe-swiftui/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tic-tac-toe-swiftui/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.tic-tac-toe-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BCAC56267DE9AA0037D96C /* Build configuration list for PBXProject "tic-tac-toe-swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BCAC68267DE9AB0037D96C /* Debug */,
+				04BCAC69267DE9AB0037D96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BCAC6A267DE9AB0037D96C /* Build configuration list for PBXNativeTarget "tic-tac-toe-swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BCAC6B267DE9AB0037D96C /* Debug */,
+				04BCAC6C267DE9AB0037D96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04BCAC53267DE9AA0037D96C /* Project object */;
+}
