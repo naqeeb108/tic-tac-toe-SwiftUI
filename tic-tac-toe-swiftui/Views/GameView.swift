@@ -25,7 +25,7 @@ struct GameView: View {
                         
                         ZStack {
                             
-                            GameIndicators(proxy: geometery)
+                            GameIndicators(proxy: geometery, boxColor: "BoxColor")
                             GameCircles(systemImage: viewModel.moves[index]?.indicator ?? "" )
                             
                         } //ZStack
@@ -34,6 +34,14 @@ struct GameView: View {
                         }
                     }
                 }
+                
+                ScoreCounterView(proxy: geometery, humanWinsCount: viewModel.humanWinsCount, ComputerWinsCount: viewModel.ComputerWinsCount)
+                
+                CustomText(text: "Total Games:  \(viewModel.totalGameCount)", textColor: .black)
+                    .padding(.trailing, 20)
+                
+                CustomText(text: "Draw Games:  \(viewModel.drawGames)", textColor: .black)
+                    .padding(.trailing, 20)
                 
                 Spacer()
                 
@@ -48,7 +56,10 @@ struct GameView: View {
                         viewModel.resetGame()
                       }))
             }
+            
         }
+        .background(Color("background"))
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -62,11 +73,14 @@ struct ContentView_Previews: PreviewProvider {
 struct GameIndicators: View {
     
     var proxy: GeometryProxy
+    var boxColor: String
     
     var body: some View {
         
-        Circle()
-            .foregroundColor(.red).opacity(0.8)
+        Rectangle()
+            .foregroundColor(Color(boxColor)).opacity(0.8)
+            .cornerRadius(10)
+            .shadow(radius: 5)
             .frame(width:  proxy.size.width/3 - 15,
                    height: proxy.size.width/3 - 15)
     }
@@ -84,5 +98,70 @@ struct GameCircles: View {
             .frame(width: 40, height: 40)
             .foregroundColor(.white)
         
+    }
+}
+
+//MARK:- GameIndicators
+struct GamesCounterView: View {
+    
+    var proxy: GeometryProxy
+    var boxColor: String
+    
+    var body: some View {
+        
+        Rectangle()
+            .foregroundColor(Color(boxColor)).opacity(0.8)
+            .cornerRadius(10)
+            .shadow(radius: 5)
+            .padding(.top, 30)
+            .frame(width: 150, height: 80)
+    }
+}
+
+//MARK:- TextView
+struct CustomText: View {
+    
+    var text: String
+    var textColor: Color
+    
+    var body: some View {
+        
+        Text(text)
+            .padding(.all,5)
+            .font(.headline)
+            .foregroundColor(textColor)
+    }
+}
+
+//MARK:- ScoreCounterView
+struct ScoreCounterView: View {
+    
+    var proxy: GeometryProxy
+    var humanWinsCount: Int
+    var ComputerWinsCount: Int
+    
+    var body: some View {
+        
+        HStack {
+            
+            CustomText(text: "You", textColor: .black)
+                .padding(.top, 30)
+            
+            ZStack {
+                
+                GamesCounterView(proxy: proxy, boxColor: "white")
+                
+                HStack {
+                    CustomText(text: "\(humanWinsCount)", textColor: .black)
+                    CustomText(text: "-", textColor: .black)
+                    CustomText(text: "\(ComputerWinsCount)", textColor: .black)
+                }
+                .padding(.top, 30)
+            }
+            
+            CustomText(text: "Comp", textColor: .black)
+                .padding(.top, 30)
+            
+        }
     }
 }

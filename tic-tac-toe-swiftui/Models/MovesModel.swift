@@ -14,6 +14,6 @@ struct Move {
     let boradIndex: Int
     
     var indicator : String {
-        return player == .human ? "xmark" : "circle"
+        return player == .human ? "checkmark" : "xmark"
     }
 }
